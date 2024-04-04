@@ -1,6 +1,6 @@
 import { TreeLike, createNode } from '../common/basic';
 
-export type BST = TreeLike;
+export interface BST extends TreeLike {};
 
 export const createBST = createNode;
 

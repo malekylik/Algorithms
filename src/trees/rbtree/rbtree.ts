@@ -45,7 +45,7 @@ import { TreeLike } from '../common/basic';
 // Moreover, we always try recoloring first, if recoloring doesn’t work, then we go for rotation.
 // The algorithms have mainly two cases depending upon the color of the uncle. If the uncle is red, we do recolor. If the uncle is black, we do rotations and/or recoloring.
 
-export type RBTree = TreeLike & {
+export interface RBTree extends TreeLike {
   left: RBTree | null;
   right: RBTree | null;
   parent: RBTree | null;

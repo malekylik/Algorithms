@@ -1,4 +1,4 @@
-export type TreeLike = {
+export interface TreeLike {
   value: number;
   left: TreeLike | null;
   right: TreeLike | null;
